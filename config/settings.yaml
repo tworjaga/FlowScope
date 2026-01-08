@@ -1,0 +1,156 @@
+# Network Analyzer Pro - Configuration File
+
+# Capture Settings
+capture:
+  default_interface: "auto"  # auto-detect or specify interface name
+  buffer_size: 65536
+  promiscuous_mode: true
+  snapshot_length: 65535
+  timeout_ms: 100
+  
+# Performance Settings
+performance:
+  max_packets_memory: 100000  # Maximum packets to keep in memory
+  update_interval_ms: 100     # UI update interval
+  statistics_interval_ms: 1000
+  async_workers: 4
+  
+# UI Settings
+ui:
+  theme: "dark"
+  window_width: 1600
+  window_height: 900
+  font_family: "Consolas"
+  font_size: 10
+  show_toolbar: true
+  show_statusbar: true
+  
+# Theme Colors (Dark Theme)
+theme:
+  dark:
+    background: "#1e1e1e"
+    foreground: "#d4d4d4"
+    accent: "#007acc"
+    success: "#4ec9b0"
+    warning: "#ce9178"
+    error: "#f48771"
+    border: "#3e3e3e"
+    selection: "#264f78"
+    hover: "#2a2d2e"
+    
+    # Protocol colors
+    tcp: "#569cd6"
+    udp: "#4ec9b0"
+    icmp: "#c586c0"
+    dns: "#dcdcaa"
+    http: "#ce9178"
+    https: "#4fc1ff"
+    arp: "#b5cea8"
+    dhcp: "#9cdcfe"
+    
+# Filter Presets
+filter_presets:
+  - name: "HTTP/HTTPS Traffic"
+    filter: "tcp port 80 or tcp port 443"
+    
+  - name: "DNS Queries"
+    filter: "udp port 53"
+    
+  - name: "Local Network"
+    filter: "net 192.168.0.0/16 or net 10.0.0.0/8"
+    
+  - name: "External Traffic"
+    filter: "not (net 192.168.0.0/16 or net 10.0.0.0/8 or net 127.0.0.0/8)"
+    
+  - name: "Suspicious Ports"
+    filter: "tcp port 22 or tcp port 23 or tcp port 3389"
+    
+# Anomaly Detection Settings
+anomaly_detection:
+  enabled: true
+  
+  dns_frequency:
+    enabled: true
+    threshold: 100  # queries per minute
+    
+  suspicious_ports:
+    enabled: true
+    ports: [22, 23, 135, 139, 445, 1433, 3306, 3389, 5900]
+    
+  beaconing:
+    enabled: true
+    min_requests: 10
+    time_window: 300  # seconds
+    jitter_tolerance: 0.1
+    
+  rate_limit:
+    enabled: true
+    packets_per_second: 1000
+    bytes_per_second: 10485760  # 10 MB/s
+    
+# Export Settings
+export:
+  csv:
+    delimiter: ","
+    include_headers: true
+    
+  pcap:
+    compression: false
+    
+  html:
+    include_charts: true
+    include_statistics: true
+    template: "default"
+    
+# Database Settings
+database:
+  type: "sqlite"
+  path: "sessions/analyzer.db"
+  auto_vacuum: true
+  
+# API Settings
+api:
+  enabled: false
+  host: "0.0.0.0"
+  port: 8080
+  cors_enabled: true
+  auth_required: false
+  
+# Security Settings
+security:
+  blacklist_domains: []
+  whitelist_domains: []
+  
+  detect_vpn: true
+  detect_proxy: true
+  detect_doh: true  # DNS over HTTPS
+  
+# Logging Settings
+logging:
+  level: "INFO"  # DEBUG, INFO, WARNING, ERROR
+  max_file_size: 10485760  # 10 MB
+  backup_count: 5
+  
+# Plugin Settings
+plugins:
+  enabled: true
+  auto_load: true
+  directory: "plugins"
+  
+# Session Settings
+session:
+  auto_save: true
+  auto_save_interval: 300  # seconds
+  max_sessions: 100
+  
+# Hotkeys
+hotkeys:
+  save_session: "Ctrl+S"
+  open_session: "Ctrl+O"
+  export_csv: "Ctrl+E"
+  open_filter: "Ctrl+F"
+  pause_resume: "Ctrl+P"
+  reset_stats: "Ctrl+R"
+  refresh: "F5"
+  fullscreen: "F11"
+  quit: "Ctrl+Q"

@@ -1,0 +1,8 @@
+2026-01-08 06:49:33,930 - __main__ - INFO - Starting FlowScope with GUI
+2026-01-08 06:49:33,971 - config.settings - INFO - Configuration loaded from config\settings.yaml
+2026-01-08 06:49:34,013 - backend.database.session_manager - INFO - Session manager initialized with database: sessions\analyzer.db
+2026-01-08 06:49:34,234 - backend.core.packet_capture - INFO - Found 1 valid interfaces
+2026-01-08 06:49:34,235 - backend.core.packet_capture - INFO - Found 1 valid interfaces
+2026-01-08 06:49:34,235 - backend.core.packet_capture - INFO - Auto-selected Ethernet interface: Realtek PCIe GbE Family Controller
+2026-01-08 06:49:34,235 - frontend.ui.main_window - INFO - Found 1 valid interfaces
+2026-01-08 06:49:34,274 - frontend.ui.main_window - INFO - Main window initialized
