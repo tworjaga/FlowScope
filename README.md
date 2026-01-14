@@ -138,7 +138,7 @@ Professional-grade network traffic analyzer with advanced protocol analysis, rea
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/flowscope.git
+git clone https://github.com/tworjaga/flowscope.git
 cd flowscope
 
 # Install dependencies
@@ -324,3 +324,4 @@ If you find this project useful, please consider giving it a star!
 ---
 
 **Note**: This tool is for educational and professional network analysis purposes only. Always ensure you have proper authorization before analyzing network traffic.
+
