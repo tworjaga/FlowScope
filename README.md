@@ -6,124 +6,124 @@ Professional-grade network traffic analyzer with advanced protocol analysis, rea
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20Linux%20%7C%20macOS-lightgrey.svg)](https://github.com)
 
-## 🚀 Features
+## Features
 
-### 🔐 TLS/HTTPS Analysis (Enhanced)
-- ✅ **Multi-Port TLS Detection** - Ports 443, 8443, 4433, 10443
-- ✅ **Complete TLS Handshake Capture** - All handshake stages tracked
-- ✅ **Full X.509 Certificate Parsing** - Subject, Issuer, Validity, Serial Number
-- ✅ **Enhanced JA3 Fingerprinting** - Complete 5-component fingerprint
-- ✅ **Advanced Extension Parsing** - SNI, ALPN, Supported Groups, Signature Algorithms
-- ✅ **TLS Version Detection** - TLS 1.0/1.1/1.2/1.3
-- ✅ **Cipher Suite Analysis** - All cipher suites captured and analyzed
-- ✅ **Certificate Chain Validation** - Full certificate details
-- ✅ **Session Tracking** - Session ID and ticket monitoring
+### TLS/HTTPS Analysis (Enhanced)
+- **Multi-Port TLS Detection** - Ports 443, 8443, 4433, 10443
+- **Complete TLS Handshake Capture** - All handshake stages tracked
+- **Full X.509 Certificate Parsing** - Subject, Issuer, Validity, Serial Number
+- **Enhanced JA3 Fingerprinting** - Complete 5-component fingerprint
+- **Advanced Extension Parsing** - SNI, ALPN, Supported Groups, Signature Algorithms
+- **TLS Version Detection** - TLS 1.0/1.1/1.2/1.3
+- **Cipher Suite Analysis** - All cipher suites captured and analyzed
+- **Certificate Chain Validation** - Full certificate details
+- **Session Tracking** - Session ID and ticket monitoring
 
-### 📡 WiFi Network Analysis (Enhanced)
-- ✅ **Cross-Platform Scanning** - Windows, Linux, macOS support
-- ✅ **MAC Vendor Lookup** - Identifies 30+ device manufacturers
-- ✅ **Rogue AP Detection** - Detects duplicate SSIDs with different BSSIDs
-- ✅ **Enhanced Security Analysis** - Color-coded warnings (🔴 Critical, 🟡 Warning, 🟢 Info)
-- ✅ **WPA3 Detection** - Latest security standard support
-- ✅ **Interference Analysis** - Channel overlap and interference scoring
-- ✅ **Smart Channel Recommendations** - Best channels for 2.4GHz and 5GHz
-- ✅ **Suspicious SSID Detection** - Identifies potentially malicious networks
-- ✅ **Hidden SSID Detection** - Flags security through obscurity
-- ✅ **Signal Strength History** - Track signal quality over time
-- ✅ **Network History Tracking** - Monitor network appearances
-- ✅ **Deauth Attack Detection** - Identifies potential attacks
-- ✅ **Comprehensive Reports** - Detailed WiFi environment analysis
+### WiFi Network Analysis (Enhanced)
+- **Cross-Platform Scanning** - Windows, Linux, macOS support
+- **MAC Vendor Lookup** - Identifies 30+ device manufacturers
+- **Rogue AP Detection** - Detects duplicate SSIDs with different BSSIDs
+- **Enhanced Security Analysis** - Color-coded warnings ( Critical,  Warning,  Info)
+- **WPA3 Detection** - Latest security standard support
+- **Interference Analysis** - Channel overlap and interference scoring
+- **Smart Channel Recommendations** - Best channels for 2.4GHz and 5GHz
+- **Suspicious SSID Detection** - Identifies potentially malicious networks
+- **Hidden SSID Detection** - Flags security through obscurity
+- **Signal Strength History** - Track signal quality over time
+- **Network History Tracking** - Monitor network appearances
+- **Deauth Attack Detection** - Identifies potential attacks
+- **Comprehensive Reports** - Detailed WiFi environment analysis
 
-### 🔍 Protocol Analysis
-- ✅ TCP/UDP with detailed flag analysis (None-safe)
-- ✅ ICMP (ping, unreachable messages)
-- ✅ ARP (network discovery)
-- ✅ DHCP (IP assignment tracking)
-- ✅ DNS with query tracking
-- ✅ HTTP/HTTPS traffic analysis
-- ✅ NTP (time synchronization)
-- ✅ mDNS/SSDP (device discovery)
-- ✅ QUIC (detection and analysis)
+### Protocol Analysis
+- TCP/UDP with detailed flag analysis (None-safe)
+- ICMP (ping, unreachable messages)
+- ARP (network discovery)
+- DHCP (IP assignment tracking)
+- DNS with query tracking
+- HTTP/HTTPS traffic analysis
+- NTP (time synchronization)
+- mDNS/SSDP (device discovery)
+- QUIC (detection and analysis)
 
 ### Advanced Filtering
-- 🔍 IP range filtering
-- 🔍 Port filtering
-- 🔍 Protocol filtering
-- 🔍 Direction filtering (in/out)
-- 🔍 Time-based filtering
-- 🔍 Combined filters (AND/OR)
-- 🔍 Saved filter presets
+- IP range filtering
+- Port filtering
+- Protocol filtering
+- Direction filtering (in/out)
+- Time-based filtering
+- Combined filters (AND/OR)
+- Saved filter presets
 
 ### Statistics & Metrics
-- 📊 PPS (packets per second)
-- 📊 BPS (bytes per second)
-- 📊 Top IPs by traffic
-- 📊 Top domains (DNS/SNI)
-- 📊 Top ports
-- 📊 Traffic histograms
-- 📊 Spike detection
-- 📊 Idle/active period analysis
+- PPS (packets per second)
+- BPS (bytes per second)
+- Top IPs by traffic
+- Top domains (DNS/SNI)
+- Top ports
+- Traffic histograms
+- Spike detection
+- Idle/active period analysis
 
 ### Real-time Visualization
-- 📈 Live traffic graphs
-- 📈 Protocol distribution charts
-- 📈 DNS/HTTP/TLS activity graphs
-- 📈 Activity heatmaps
-- 📈 Source→Destination flow diagrams
-- 📈 Timeline view
-- 📈 Packet mini-maps
+- Live traffic graphs
+- Protocol distribution charts
+- DNS/HTTP/TLS activity graphs
+- Activity heatmaps
+- Source→Destination flow diagrams
+- Timeline view
+- Packet mini-maps
 
 ### WiFi Network Analysis
-- 📡 WiFi network scanning (Windows/Linux/macOS)
-- 📡 Signal strength monitoring
-- 📡 Channel congestion analysis
-- 📡 Security vulnerability detection
-- 📡 Best channel recommendations
-- 📡 Connected network details
-- 📡 Network quality assessment
-- 📡 Auto-refresh capability
-- 📡 Comprehensive WiFi reports
+- WiFi network scanning (Windows/Linux/macOS)
+- Signal strength monitoring
+- Channel congestion analysis
+- Security vulnerability detection
+- Best channel recommendations
+- Connected network details
+- Network quality assessment
+- Auto-refresh capability
+- Comprehensive WiFi reports
 
-### 🚨 Anomaly Detection (Enhanced)
-- 🚨 **Excessive DNS Queries** - Detects DNS tunneling attempts
-- 🚨 **Port Scanning Detection** - Identifies reconnaissance activity
-- 🚨 **Suspicious Port Usage** - Flags dangerous ports (SSH, RDP, SMB, etc.)
-- 🚨 **Unusual SNI Patterns** - Detects Tor, suspicious domains
-- 🚨 **Beaconing Detection** - Identifies C2 communication patterns
-- 🚨 **Rate-Limit Violations** - PPS/BPS threshold monitoring
-- 🚨 **VPN/Proxy Detection** - Identifies encrypted tunnel usage
-- 🚨 **DNS over HTTPS Detection** - Tracks DoH usage
-- 🚨 **DDoS Detection** - Connection attempt monitoring
+### Anomaly Detection (Enhanced)
+- **Excessive DNS Queries** - Detects DNS tunneling attempts
+- **Port Scanning Detection** - Identifies reconnaissance activity
+- **Suspicious Port Usage** - Flags dangerous ports (SSH, RDP, SMB, etc.)
+- **Unusual SNI Patterns** - Detects Tor, suspicious domains
+- **Beaconing Detection** - Identifies C2 communication patterns
+- **Rate-Limit Violations** - PPS/BPS threshold monitoring
+- **VPN/Proxy Detection** - Identifies encrypted tunnel usage
+- **DNS over HTTPS Detection** - Tracks DoH usage
+- **DDoS Detection** - Connection attempt monitoring
 
 ### Export & Reporting
-- 💾 CSV export
-- 💾 PCAP export (Wireshark compatible)
-- 💾 HTML reports with charts
-- 💾 Auto-save sessions
-- 💾 Session comparison
-- 💾 Syslog export
+- CSV export
+- PCAP export (Wireshark compatible)
+- HTML reports with charts
+- Auto-save sessions
+- Session comparison
+- Syslog export
 
 ### UI/UX Features
-- 🎨 Dark theme (strict & pleasant)
-- 🎨 Context menus
-- 🎨 Detailed packet inspection
-- 🎨 Color profiles
-- 🎨 Sortable/pinnable columns
-- 🎨 Dockable panels
-- 🎨 Hotkeys support
-- 🎨 Zoom controls
+- Dark theme (strict & pleasant)
+- Context menus
+- Detailed packet inspection
+- Color profiles
+- Sortable/pinnable columns
+- Dockable panels
+- Hotkeys support
+- Zoom controls
 
 ### Advanced Features
-- ⚙️ Plugin system
-- ⚙️ Configuration profiles
-- ⚙️ REST API
-- ⚙️ Headless mode
-- ⚙️ Role-based access (viewer/analyst)
-- ⚙️ Capture timers
-- ⚙️ Auto-start sessions
-- ⚙️ Domain blacklist/whitelist
-- ⚙️ VPN/Proxy detection
-- ⚙️ DNS over HTTPS detection
+- Plugin system
+- Configuration profiles
+- REST API
+- Headless mode
+- Role-based access (viewer/analyst)
+- Capture timers
+- Auto-start sessions
+- Domain blacklist/whitelist
+- VPN/Proxy detection
+- DNS over HTTPS detection
 
 ## 🛠️ Installation
 
@@ -158,7 +158,7 @@ cryptography>=41.0.0  # For enhanced TLS certificate parsing
 netifaces>=0.11.0     # For WiFi analysis
 ```
 
-## 🚀 Quick Start
+## Quick Start
 
 ### GUI Mode (Recommended)
 ```bash
@@ -234,7 +234,7 @@ flowscope/
 - Administrator/root privileges (for packet capture)
 - Windows/Linux/macOS
 
-## 📖 Documentation
+## Documentation
 
 - **[Installation Guide](INSTALL.md)** - Detailed installation instructions
 - **[Npcap Setup Guide](NPCAP_SETUP_GUIDE.md)** - Windows packet capture setup
@@ -242,7 +242,7 @@ flowscope/
 - **[Project Summary](PROJECT_SUMMARY.md)** - Complete feature overview
 - **[Testing Results](TESTING_RESULTS.md)** - Validation and test results
 
-## 🐛 Troubleshooting
+## Troubleshooting
 
 ### "0 packets captured"
 1. **Read `NPCAP_SETUP_GUIDE.md`** for Windows setup
@@ -270,7 +270,7 @@ All NoneType errors in TCP flag parsing have been resolved in:
 ### Asyncio Task Warnings (Fixed)
 Proper task cancellation implemented for clean shutdown.
 
-## 🎯 Use Cases
+## Use Cases
 
 - **Network Security Analysis** - Detect intrusions and anomalies
 - **WiFi Site Surveys** - Optimize wireless network deployment
@@ -284,15 +284,15 @@ Proper task cancellation implemented for clean shutdown.
 ## 🔧 Recent Updates
 
 ### Version 2.0 (Latest)
-- ✅ **Enhanced TLS Analysis** - Complete handshake capture with JA3 fingerprinting
-- ✅ **Powerful WiFi Tools** - Rogue AP detection, vendor lookup, interference analysis
-- ✅ **Fixed All NoneType Errors** - Robust TCP flag parsing across all modules
-- ✅ **Asyncio Task Management** - Proper task cancellation and cleanup
-- ✅ **Enhanced Security Detection** - WPA3 support, suspicious SSID detection
-- ✅ **Better Certificate Parsing** - Full X.509 details with cryptography library
-- ✅ **Improved UI** - Packet details panel, TLS handshake panel integration
+- **Enhanced TLS Analysis** - Complete handshake capture with JA3 fingerprinting
+- **Powerful WiFi Tools** - Rogue AP detection, vendor lookup, interference analysis
+- **Fixed All NoneType Errors** - Robust TCP flag parsing across all modules
+- **Asyncio Task Management** - Proper task cancellation and cleanup
+- **Enhanced Security Detection** - WPA3 support, suspicious SSID detection
+- **Better Certificate Parsing** - Full X.509 details with cryptography library
+- **Improved UI** - Packet details panel, TLS handshake panel integration
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
@@ -302,28 +302,29 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-## 📝 License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE.txt) file for details.
 
-## 👨‍💻 Author
+## Author
 
 Created for professional network analysis and security research.
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - Scapy - Powerful packet manipulation library
 - PyQt6 - Modern GUI framework
 - Npcap - Windows packet capture driver
 - cryptography - TLS certificate parsing
 
-## ⭐ Star History
+## Star History
 
 If you find this project useful, please consider giving it a star!
 
 ---
 
 **Note**: This tool is for educational and professional network analysis purposes only. Always ensure you have proper authorization before analyzing network traffic.
+
 
 
 
